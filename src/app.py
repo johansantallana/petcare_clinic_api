@@ -1,5 +1,23 @@
 from flask import Flask, jsonify
+from flask_sqlalchemy import SQLAlchemy
+from dotenv import load_dotenv
+import os
+
+#sintaxis para cargar las variables de entorno
+load_dotenv()
+
 app = Flask(__name__)
+
+#configuramos la base de datos
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+#inicializar SQLAlchemy
+db = SQLAlchemy(app)
+
+#importar modelos despues de inicializar db
+with app.app_context():
+    from models import Owner
 
 #Ruta de pueba
 @app.route('/')
