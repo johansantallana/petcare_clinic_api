@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
 import os
@@ -17,14 +17,14 @@ db = SQLAlchemy(app)
 
 #importar modelos despues de inicializar db
 with app.app_context():
-    from models import Owner
+    from src.models.owner import Owner
 
 #Ruta de pueba
 @app.route('/')
 def home():
     return jsonify({
-        "message": "PetCare CLinic API",
-        "status": "runing"
+        "message": "PetCare Clinic API",
+        "status": "running"
     })
     
 @app.route('/health')
