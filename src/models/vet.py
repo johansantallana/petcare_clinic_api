@@ -9,3 +9,5 @@ class Vet(db.Model):
     email = db.Column(db.String(30), unique = True, nullable = False)
     phone = db.Column(db.String(20))
     specialty = db.Column(db.String(50))
+    
+    appointments = db.relationship("Appointment", backref = "vet", cascade="all, delete-orphan")

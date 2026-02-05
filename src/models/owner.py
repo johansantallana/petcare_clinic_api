@@ -8,3 +8,6 @@ class Owner(db.Model):
     last_name = db.Column(db.String(30), nullable = False)
     email = db.Column(db.String(30), unique = True, nullable = False)
     phone = db.Column(db.String(20))
+    
+    pets = db.relationship("Pet", backref="owner", cascade="all, delete-orphan")
+

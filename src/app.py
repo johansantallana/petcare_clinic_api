@@ -18,6 +18,10 @@ db = SQLAlchemy(app)
 #importar modelos despues de inicializar db
 with app.app_context():
     from src.models.owner import Owner
+    from src.models.pet import Pet
+    from src.models.vet import Vet
+    from src.models.appointment import Appointment
+    db.create_all()
 
 #Ruta de pueba
 @app.route('/')

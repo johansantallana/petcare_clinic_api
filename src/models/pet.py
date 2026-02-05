@@ -9,3 +9,5 @@ class Pet(db.Model):
     breed = db.Column(db.String(20), nullable = False)
     age = db.Column(db.Integer)
     owner_id = db.Column(db.Integer, db.ForeignKey("owners.id"), nullable = False)
+    
+    appointments = db.relationship("Appointment", backref = "pet", cascade="all, delete-orphan")
