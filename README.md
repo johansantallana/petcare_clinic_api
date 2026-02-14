@@ -2,7 +2,7 @@
 
 API REST para la gestión de una clínica veterinaria, construida con Flask y PostgreSQL.
 
-## Tecnologías
+## Tecnologías...
 
 - **Python 3**
 - **Flask** - Framework web
