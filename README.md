@@ -1,7 +1,6 @@
 # PetCare Clinic API
 
 API REST para la gestión de una clínica veterinaria, construida con Flask y PostgreSQL.
-
 ## Tecnologías...
 
 - **Python 3**
