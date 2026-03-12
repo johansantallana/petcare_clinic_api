@@ -5,7 +5,6 @@ import os
 
 #sintaxis para cargar las variables de entorno
 load_dotenv()
-
 app = Flask(__name__)
 
 #configuramos la base de datos
