@@ -77,5 +77,4 @@ Representa al dueño de una mascota.
    ```bash
    python src/app.py
    ```
-
 La API estará disponible en `http://localhost:5000`
