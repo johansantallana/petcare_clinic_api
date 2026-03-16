@@ -48,6 +48,7 @@ Representa al dueño de una mascota.
    git clone <url-del-repositorio>
    cd pet_care_api
    ```
+   
 
 2. Crear y activar el entorno virtual:
    ```bash
