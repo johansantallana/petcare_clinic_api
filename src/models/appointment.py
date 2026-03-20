@@ -1,5 +1,6 @@
 from src.app import db
 
+
 class Appointment(db.Model):
     __tablename__ = "appointments"
 
