@@ -21,7 +21,6 @@ pet_care_api/
 │   └── models.py        # Modelos de base de datos
 └── venv/                # Entorno virtual
 ```
-
 ## Modelos
 ### Owner
 Representa al dueño de una mascota.
