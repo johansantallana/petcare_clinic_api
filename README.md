@@ -10,6 +10,7 @@ API REST para la gestión de una clínica veterinaria, construida con Flask y Po
 - **python-dotenv** - Variables de entorno
 
 ## Estructura del proyecto
+
 ```
 pet_care_api/
 ├── .env                 # Variables de entorno
