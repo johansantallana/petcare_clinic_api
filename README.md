@@ -23,7 +23,6 @@ pet_care_api/
 ## Modelos
 ### Owner
 Representa al dueño de una mascota.
-
 | Campo        | Tipo        | Restricciones          |
 |--------------|-------------|------------------------|
 | `id`         | Integer     | Primary Key            |
